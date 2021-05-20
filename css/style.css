@@ -1,0 +1,67 @@
+/* General */
+@font-face {
+  font-family: "Roboto-Regular", sans-serif;
+  src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "SFProDisplay-Regular", sans-serif;
+  src: url(../fonts/sf-pro/SFProDisplay-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --font-family-Roboto-Regular: "Roboto-Regular";
+  --color-text1: #fcf9e3;
+  --font-family-SFProDisplay-Regular: "SFProDisplay-Regular";
+}
+@-moz-document url-prefix() {
+  html,
+  body {
+    scrollbar-width: none;
+  }
+}
+body {
+  font-size: 20px;
+  color: var(--color-text1);
+  font-family: var(--font-family-Eurostile);
+  background: var(--color-text1);
+}
+html {
+  scrollbar-width: none; /* Firefox 64 */
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  color: var(--color-text1);
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+p,
+img,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
