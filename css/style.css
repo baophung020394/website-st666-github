@@ -747,7 +747,7 @@ p {
     justify-content: center;
     flex-wrap: nowrap;
     overflow: hidden;
-    width: 75%;
+    width: 900px;
     margin: auto;
     padding-left: 0;
   }
@@ -762,7 +762,7 @@ p {
     font-size: 16px;
     color: var(--color-text1);
     animation: ring infinite;
-    animation-duration: 25s;
+    animation-duration: 5s;
     white-space: nowrap;
   }
   .ring-noti p .text-red {
@@ -770,7 +770,7 @@ p {
   }
   .ring-noti .image {
     position: relative;
-    left: 60px;
+    left: 36px;
   }
   .ring-noti .image:before {
     content: '';
