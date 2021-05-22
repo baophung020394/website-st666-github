@@ -87,4 +87,7 @@ $(document).ready(() => {
     $(this).css({ 'display': 'none'});
     $('body').find('.menu-mobile').removeClass('active');
   });
+  $(".list-menu .dropdown-button").on("click", function () {
+    $(this).find('~ol').slideToggle(250);
+  });
 });
