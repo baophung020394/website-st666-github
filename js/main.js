@@ -13,8 +13,8 @@ $(document).ready(() => {
         dots: false,
         nav: true,
         navText: [
-          "<img src='../img/item/left.jpg'>",
-          "<img src='../img/item/right.jpg'>",
+          "<img src='../img/item/left.png'>",
+          "<img src='../img/item/right.png'>",
         ],
       },
       1024: {
@@ -22,8 +22,8 @@ $(document).ready(() => {
         dots: false,
         nav: true,
         navText: [
-          "<img src='../img/item/left.jpg'>",
-          "<img src='../img/item/right.jpg'>",
+          "<img src='../img/item/left.png'>",
+          "<img src='../img/item/right.png'>",
         ],
       },
     },
