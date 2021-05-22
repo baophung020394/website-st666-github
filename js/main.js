@@ -1,5 +1,25 @@
 $(document).ready(() => {
-  $(".carousel-home").owlCarousel({
+  $(".carousel-home-mobile").owlCarousel({
+    loop: true,
+    responsiveClass: true,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1,
+        dots: true,
+        
+      },
+      768: {
+        items: 1,
+        dots: true,
+      },
+      1024: {
+        items: 1,
+        dots: true,
+      },
+    },
+  });
+  $(".carousel-home-desk").owlCarousel({
     loop: true,
     responsiveClass: true,
     responsive: {
