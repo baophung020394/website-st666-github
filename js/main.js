@@ -22,6 +22,7 @@ $(document).ready(() => {
   $(".carousel-home-desk").owlCarousel({
     loop: true,
     responsiveClass: true,
+    margin: 10,
     responsive: {
       0: {
         items: 1,
