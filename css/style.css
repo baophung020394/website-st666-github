@@ -196,6 +196,7 @@ p {
   font-family: var(--font-family-SFProDisplay-Heavy), sans-serif;
   color: var(--color-text1);
   margin: 15px 0;
+  font-weight: bold;
 }
 .register,
 .download {
@@ -210,7 +211,7 @@ p {
 }
 .section-banner .list-top-mobile .card-news .card-new {
   padding-bottom: 20px;
-} 
+}
 /* End Header */
 /* Section Banner */
 .section-banner {
@@ -241,6 +242,7 @@ p {
   font-family: var(--font-family-Roboto-Bold);
   font-weight: bold;
   color: var(--color-text1);
+  text-align: left;
 }
 .section-banner .list-top .card-news {
   padding: 3px;
@@ -308,11 +310,39 @@ p {
 .section-aboutst666 .tags-about img {
   width: 180px;
 }
+.section-aboutst666 h3 {
+  font-family: var(--font-family-SFProDisplay-Heavy), sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 0;
+}
+.section-aboutst666 h3 span.s {
+  color: var(--color-text7);
+  text-transform: uppercase;
+}
+.section-aboutst666 h3 span.t666 {
+  color: var(--color-text6);
+  text-transform: uppercase;
+}
 /* About */
 /* Section HR */
 .section-hr {
   display: none;
   margin-top: 30px;
+}
+.footer .footer-top .list-services .items {
+  position: relative;
+}
+.footer .footer-top .list-services .items .actions {
+  top: 30px;
+  left: 24%;
+  bottom: unset;
+}
+.footer .footer-top .list-services .items .actions span {
+  min-width: 193px;
+  border: 1px solid #000;
+  text-align: center;
+  cursor: pointer;
 }
 .footer .footer-top .list-services,
 .section-news .news,
@@ -355,6 +385,9 @@ p {
   height: 100%;
 }
 .section-news .news .new .icon {
+  font-family: var(--font-family-SFProDisplay-Heavy), sans-serif;
+  font-weight: bold;
+  font-size: 25px;
   width: 100%;
   display: none;
   flex-direction: row;
@@ -474,6 +507,7 @@ p {
 }
 .footer .footer-bottom h3 {
   font-family: var(--font-family-SFProDisplay-Heavy), sans-serif;
+  font-weight: bold;
   font-size: 25px;
   color: var(--color-text3);
   text-transform: uppercase;
@@ -620,6 +654,7 @@ p {
   font-size: 14px;
   color: var(--color-text1);
   text-transform: uppercase;
+  font-weight: bold;
 }
 .menu-child li.active a {
   color: var(--color-text6);
@@ -640,6 +675,7 @@ p {
   align-items: flex-start;
   border: 1px solid var(--color-text3);
   padding: 10px;
+  margin-bottom: 15px;
 }
 .list-menu ol.submenu {
   margin-top: 30px;
@@ -689,6 +725,7 @@ p {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .content p,
 .content h3.title {
@@ -724,14 +761,18 @@ p {
 }
 .post-related h3 {
   font-size: 16px;
+  margin-bottom: 0;
 }
 .post-related .right {
   width: 45%;
   height: 100%;
-  min-height: 133px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.sidebars .post-related .right {
+  height: 133px;
 }
 .post-related .right .date {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
@@ -740,6 +781,9 @@ p {
 }
 .post-related .left {
   width: 52%;
+  height: 100px;
+}
+.sidebars .post-related .left {
   height: 133px;
 }
 .post-related .left a {
@@ -779,6 +823,7 @@ p {
   text-align: center;
   margin-top: 10px;
   padding: 10px 0;
+  color: var(--color-text6);
 }
 form.form-contact textarea {
   min-height: 102px;
@@ -844,10 +889,10 @@ form.form-contact label {
   .section-banner .list-top-mobile .card-news {
     min-height: 250px;
   }
-  .section-banner .list-top-mobile .card-news .card-new img { 
+  .section-banner .list-top-mobile .card-news .card-new img {
     height: 200px;
   }
-  .section-banner .list-top-mobile .card-news .card-new span.icon img{
+  .section-banner .list-top-mobile .card-news .card-new span.icon img {
     height: 11px;
   }
   /* Header */
@@ -865,6 +910,9 @@ form.form-contact label {
   }
   .section-aboutst666 .item-about {
     padding: 0 60px;
+  }
+  .section-aboutst666 h3 {
+    font-size: 35px;
   }
   /* About */
   /* Section HR */
@@ -954,6 +1002,9 @@ form.form-contact label {
   .post-related {
     margin-bottom: 0;
   }
+  .banner-detail img {
+    height: 276px;
+  }
   /* Detail */
 }
 
@@ -970,6 +1021,10 @@ form.form-contact label {
     flex-direction: row;
     align-items: flex-end;
   }
+  .header .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .header .left {
     display: flex;
     flex-direction: row;
@@ -983,7 +1038,6 @@ form.form-contact label {
     display: flex !important;
     flex-direction: row;
     width: auto;
-    margin-bottom: 15px;
     align-items: flex-end;
   }
   .logo-top {
@@ -1049,6 +1103,7 @@ form.form-contact label {
     animation: ring infinite;
     animation-duration: 25s;
     white-space: nowrap;
+    font-weight: bold;
   }
   .ring-noti p .text-red {
     color: var(--color-text6);
@@ -1091,6 +1146,9 @@ form.form-contact label {
   .section-banner .list-top-mobile .reactions,
   .section-banner .list-top-mobile .card-news h1.title {
     padding: 0 20px;
+  }
+  .menu-games {
+    margin-top: 0;
   }
   /* Header */
   /* FOoter */
@@ -1140,9 +1198,12 @@ form.form-contact label {
   .menu-child li a {
     font-size: 25px;
   }
+  .list-post-related {
+    margin: 45px 0;
+  }
   /* Detail */
   /* Section HR */
-  .section-hr .box { 
+  .section-hr .box {
     height: 133px;
     padding: 15px;
   }
@@ -1182,8 +1243,8 @@ form.form-contact label {
 }
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1300px;
-    width: 1300px;
+    max-width: 1380px;
+    width: 1380px;
   }
   /* Header */
   .header .left p {
@@ -1208,25 +1269,25 @@ form.form-contact label {
 }
 @media screen and (min-width: 1636px) {
   .menu-socials {
-    right: 7%;
+    right: 4%;
   }
   .menu-games {
-    left: 7%;
+    left: 4%;
   }
 }
 @media screen and (min-width: 1800px) {
   .menu-socials {
-    right: 11%;
+    right: 10%;
   }
   .menu-games {
-    left: 11%;
+    left: 10%;
   }
 }
 @media screen and (min-width: 1920px) {
   .menu-socials {
-    right: 12%;
+    right: 10%;
   }
   .menu-games {
-    left: 12%;
+    left: 10%;
   }
 }

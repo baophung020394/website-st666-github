@@ -72,6 +72,11 @@ $(document).ready(() => {
     $(this).find('.actions').toggleClass('active');
     $('body').find('.bg-overlay').css({ 'display': 'block'});
   }); 
+  $(".list-services .title").on("click", function (e) {
+    e.preventDefault();
+    $(this).find('~.actions').toggleClass('active');
+    $('body').find('.bg-overlay').css({ 'display': 'block'});
+  }); 
   $(".bg-overlay").on("click", function () {
     $(this).css({ 'display': 'none'});
     $('body').find('.actions').removeClass('active');
