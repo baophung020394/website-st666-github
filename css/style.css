@@ -715,6 +715,7 @@ p {
 .banner-detail2 {
   margin: 30px 0;
 }
+#ez-toc-container,
 .list-menu {
   position: relative;
   display: flex;
@@ -724,32 +725,41 @@ p {
   padding: 10px;
   margin-bottom: 15px;
 }
-.list-menu ol.submenu {
+#ez-toc-container ul.submenu,
+.list-menu ul.submenu {
   margin-top: 30px;
 }
-.list-menu ol {
+#ez-toc-container ul,
+.list-menu ul {
   counter-reset: legal;
   list-style-type: none;
   padding-left: 0.5rem;
 }
-.list-menu ol ol {
+#ez-toc-container ul ul,
+.list-menu ul ul {
   padding-left: 1rem;
 }
+#ez-toc-container li::before,
 .list-menu li::before {
   content: counters(legal, ".") ".";
   counter-increment: legal;
   font-size: 16px;
 }
+#ez-toc-container .arrow-icon,
+#ez-toc-container .dropdown-button,
 .list-menu .arrow-icon,
 .list-menu .dropdown-button {
   width: 36px;
+  cursor: pointer;
 }
+#ez-toc-container .arrow-icon,
 .list-menu .arrow-icon {
   position: absolute;
   top: 8px;
   right: 8px;
   z-index: 1;
 }
+#ez-toc-container .title,
 .list-menu .title {
   font-family: var(--font-family-Roboto-Bold), sans-serif;
   font-weight: bold;
@@ -761,7 +771,8 @@ p {
   top: 8px;
   z-index: 2;
 }
-.list-menu ol li a {
+#ez-toc-container ul li a,
+.list-menu ul li a {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
   font-size: 14px;
   color: var(--color-text1);
@@ -988,6 +999,10 @@ form.form-contact label {
   .section-banner .list-top-mobile .card-news .card-new span.icon img {
     height: 11px;
   }
+  .section-banner .list-top-mobile .card-news .card-new {
+    width: 340px;
+    margin: auto;
+  }
   /* Header */
   /* About */
   .section-aboutst666 .about-container {
@@ -1020,10 +1035,13 @@ form.form-contact label {
   .section-news .news,
   .section-hr .boxs {
     margin-bottom: 0;
+    width: 364px;
   }
-  .footer .footer-top .list-services:nth-child(2n),
-  .section-news .news:nth-child(2n),
-  .section-hr .boxs:nth-child(2n) {
+  .section-hr .row,
+  .section-news .row {
+    justify-content: space-between;
+  }
+  .footer .footer-top .list-services:nth-child(2n) {
     padding: 0 15px;
   }
   /* Section HR */
@@ -1068,6 +1086,16 @@ form.form-contact label {
     color: var(--color-text1);
     margin: 0 0 10px;
   }
+  .section-news .news,
+  .section-hr .boxs {
+    width: 234px;
+  }
+  .footer .footer-top .footer-top-container {
+    padding: 0;
+  }
+  .footer .footer-top .list-services {
+    width: 234px;
+  }
   /* SEction News */
   /* Footer */
   /* Footer */
@@ -1093,7 +1121,8 @@ form.form-contact label {
   }
   .content p,
   .content h3.title,
-  .list-menu ol li a {
+  #ez-toc-container ul li a,
+  .list-menu ul li a {
     font-size: 16px;
   }
   .post-related {
@@ -1108,6 +1137,16 @@ form.form-contact label {
 @media screen and (min-width: 992px) {
   .carousel-home-mobile .item .item-banner a {
     width: 100%;
+  }
+  .section-news .news,
+  .section-hr .boxs {
+    width: 310px;
+  }
+  .footer .footer-top .footer-top-container {
+    padding: 0;
+  }
+  .footer .footer-top .list-services {
+    width: 317px;
   }
 }
 
@@ -1246,6 +1285,9 @@ form.form-contact label {
   .menu-games {
     margin-top: 0;
   }
+  .header .left p {
+    font-size: 24px;
+  }
   /* Header */
   /* FOoter */
   .footer-top {
@@ -1355,6 +1397,18 @@ form.form-contact label {
     padding-top: 0;
   }
   /* Header */
+  /*  */
+  .section-news .news,
+  .section-hr .boxs {
+    width: 365px;
+  }
+  .footer .footer-top .footer-top-container {
+    padding: 0 15px;
+  }
+  .footer .footer-top .list-services {
+    width: 375px;
+  }
+  /*  */
   /* About */
   .section-aboutst666 .item-about {
     display: grid;
@@ -1380,9 +1434,6 @@ form.form-contact label {
     width: 1380px;
   }
   /* Header */
-  .header .left p {
-    font-size: 24px;
-  }
   .carousel-home.carousel-home-desk .item .item-banner {
     height: 260px;
   }
@@ -1398,6 +1449,16 @@ form.form-contact label {
     height: 133px;
     transform: translateY(-15px) translateX(-16px);
   }
+  .section-news .news,
+  .section-hr .boxs {
+    width: 440px;
+  }
+  .section-news .news .new {
+    padding: 1.5rem;
+  }
+  .footer .footer-top .list-services {
+    width: 455px;
+  }
   /* Section HR */
 }
 @media screen and (min-width: 1636px) {
@@ -1405,7 +1466,7 @@ form.form-contact label {
     right: 4%;
   }
   .menu-games {
-    left: 4%;
+    left: 3%;
   }
   /* Header */
   .logo-top {
@@ -1418,7 +1479,7 @@ form.form-contact label {
     right: 10%;
   }
   .menu-games {
-    left: 10%;
+    left: 7%;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1426,6 +1487,6 @@ form.form-contact label {
     right: 10%;
   }
   .menu-games {
-    left: 10%;
+    left: 11%;
   }
 }
