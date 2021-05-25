@@ -96,4 +96,8 @@ $(document).ready(() => {
   $(".list-menu .dropdown-button").on("click", function () {
     $(this).find('~ol').slideToggle(250);
   });
+  $('.readmore-about').on("click", function(e) {
+    e.preventDefault();
+    $('body').find('.section-aboutst666 .item-about').toggleClass('active');
+  })
 });
