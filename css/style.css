@@ -502,6 +502,7 @@ p {
   color: var(--color-text3);
   text-transform: uppercase;
   height: 50px;
+  margin-bottom: 5px;
 }
 .footer .footer-top .items {
   display: flex;
@@ -639,9 +640,9 @@ p {
   align-items: center;
   width: 49%;
   text-align: left;
-  margin: 0 0 15px 0; 
+  margin: 0 0 15px 0;
 }
-.carousel-mobile .item.tile .menu-item-mobile a .svg { 
+.carousel-mobile .item.tile .menu-item-mobile a .svg {
   margin-right: 3px;
 }
 .carousel-mobile .item.tile .menu-item-mobile a .svg img {
@@ -772,6 +773,7 @@ p {
   white-space: nowrap;
   overflow: auto;
   padding: 5px 15px;
+  border-radius: 12px;
 }
 .menu-child li {
   display: inline-block;
@@ -1341,13 +1343,13 @@ form.form-contact label {
   }
   .section-news .news,
   .section-hr .boxs {
-    width: 310px;
+    width: 284px;
   }
   .footer .footer-top .footer-top-container {
     padding: 0;
   }
   .footer .footer-top .list-services {
-    width: 317px;
+    width: 304px;
   }
   /* Footer */
   .footer .footer-top .list-services:first-child {
@@ -1362,6 +1364,10 @@ form.form-contact label {
 }
 
 @media screen and (min-width: 1024px) {
+  .container {
+    width: 900px;
+    max-width: 900px;
+  }
   /* Header */
   .header {
     display: flex;
@@ -1542,12 +1548,12 @@ form.form-contact label {
     display: block;
   }
   .menu-games a img {
-    width: 68px;
-    height: 68px;
+    width: 40px;
+    height: 40px;
   }
   .menu-socials a img {
-    width: 68px;
-    height: 68px;
+    width: 40px;
+    height: 40px;
   }
   .carousel-home .owl-dots {
     margin-top: 0;
@@ -1662,7 +1668,16 @@ form.form-contact label {
   /* Sport */
 }
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 1070px;
+    max-width: 1070px;
+  }
   /* Header */
+  .menu-socials a img,
+  .menu-games a img {
+    width: 50px;
+    height: 50px;
+  }
   .carousel-home.carousel-home-mobile {
     display: none;
   }
@@ -1708,13 +1723,13 @@ form.form-contact label {
   /* Section NEws */
   .section-news .news,
   .section-hr .boxs {
-    width: 365px;
+    width: 339px;
   }
   .footer .footer-top .footer-top-container {
     padding: 0 15px;
   }
   .footer .footer-top .list-services {
-    width: 375px;
+    width: 354px;
   }
   .section-news .news .new .icon {
     font-size: 25px;
@@ -1787,6 +1802,11 @@ form.form-contact label {
     width: 1250px;
   }
   /* Header */
+  .menu-socials a img,
+  .menu-games a img {
+    width: 68px;
+    height: 68px;
+  }
   .carousel-home.carousel-home-desk .item .item-banner {
     height: 260px;
   }
