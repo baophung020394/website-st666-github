@@ -216,6 +216,7 @@ p {
   padding: 10px 15px;
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 12px;
 }
 .section-banner .list-top-mobile .card-news .card-new {
   padding-bottom: 20px;
@@ -761,6 +762,7 @@ p {
 .menu-child {
   overflow: hidden;
   padding: 0 0.8rem;
+  margin-top: 20px;
 }
 .menu-child ul {
   background: var(--color-text4);
@@ -1436,6 +1438,7 @@ form.form-contact label {
     width: 898px;
     margin: auto;
     padding-left: 0;
+    position: relative;
   }
   .ring-noti img {
     width: 20px;
@@ -1461,7 +1464,7 @@ form.form-contact label {
     position: relative;
     left: 36px;
   }
-  .ring-noti .image:before {
+  .ring-noti .group::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1472,6 +1475,17 @@ form.form-contact label {
     width: 30px;
     height: 35px;
   }
+  /* .ring-noti .image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4px;
+    z-index: 1;
+    background: #ffffff;
+    display: block;
+    width: 30px;
+    height: 35px;
+  } */
   @keyframes ring {
     from {
       transform: translateX(100%);
@@ -1535,6 +1549,9 @@ form.form-contact label {
     width: 68px;
     height: 68px;
   }
+  .carousel-home .owl-dots {
+    margin-top: 0;
+  }
   /* Header */
   /* FOoter */
   .footer-top {
@@ -1547,7 +1564,7 @@ form.form-contact label {
   }
   .menu-socials {
     position: fixed;
-    top: 35%;
+    top: 25%;
     right: 0;
     z-index: 10;
     display: flex;
@@ -1556,7 +1573,7 @@ form.form-contact label {
   }
   .menu-games {
     position: fixed;
-    top: 35%;
+    top: 25%;
     left: 0;
     z-index: 10;
     display: flex;
