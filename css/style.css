@@ -1918,6 +1918,11 @@ form.form-contact label {
     margin-right: 30px;
   }
   /* Sport */
+  /* Footer */
+  .footer .footer-bottom h3 {
+    height: 30px;
+  }
+  /* Footer */
 }
 @media screen and (min-width: 1636px) {
   .menu-socials {
