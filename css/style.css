@@ -798,6 +798,13 @@ p {
 .banner-detail2 {
   margin: 30px 0;
 }
+.banner-detail img,
+.banner-detail2 img {
+  border-radius: 12px;
+}
+.banner-detail2 .col-md-9 {
+  margin-bottom: 15px;
+}
 #ez-toc-container,
 .list-menu {
   position: relative;
@@ -879,7 +886,7 @@ p {
   margin-bottom: 0;
 }
 .list-post-related {
-  margin: 70px 0;
+  margin: 20px 0;
   padding: 0 15px;
 }
 .post-related {
@@ -905,16 +912,8 @@ p {
   font-size: 16px;
   margin-bottom: 0;
 }
-.post-related .right {
-  width: 45%;
-  height: 100%;
-  height: 133px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .sidebars .post-related .right {
-  height: 110px;
+  height: 133px;
 }
 .post-related .right .date {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
@@ -925,6 +924,14 @@ p {
   width: 52%;
   height: 110px;
 }
+.post-related .right {
+  width: 45%;
+  height: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .sidebars .post-related .left {
   height: 133px;
 }
@@ -933,6 +940,7 @@ p {
 }
 .post-related .left img {
   height: 100%;
+  border-radius: 8px;
 }
 .sidebars .list-post-related .post-related:nth-child(2n + 1) {
   padding-left: 0;
@@ -951,6 +959,10 @@ p {
 .sidebars .banner-sidebar-right a {
   width: 100%;
   animation: nhapnhay 300ms infinite;
+  border-radius: 8px;
+}
+.sidebars .banner-sidebar-right a img {
+  border-radius: 8px;
 }
 @-webkit-keyframes nhapnhay {
   0% {
@@ -1020,7 +1032,7 @@ form.form-contact textarea {
   color: var(--color-text1) !important;
   background: var(--color-text8);
   border: 1px solid var(--color-text8);
-  border-radius: 0;
+  border-radius: 8px;
   margin-bottom: 20px;
 }
 form.form-contact input {
@@ -1042,6 +1054,7 @@ form.form-contact button.submit {
   background: var(--color-text8);
   padding: 10px 30px;
   border: none;
+  border-radius: 8px;
   margin-top: 20px;
 }
 form.form-contact label {
@@ -1321,6 +1334,13 @@ form.form-contact label {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .banner-detail2 .col-md-9 {
+    margin-bottom: 0;
+  }
+  .sidebars .post-related .right,
+  .sidebars .post-related .left {
+    height: 212px;
+  }
   /* Detail */
   /* Sport */
   .section-hot-news .owl-next,
@@ -1361,6 +1381,15 @@ form.form-contact label {
     padding: 0;
   }
   /* Sport */
+  /* Detail */
+  .sidebars .post-related .right,
+  .sidebars .post-related .left {
+    height: 90px;
+  }
+  .post-related h3 {
+    font-size: 13px;
+  }
+  /* Detail */
 }
 
 @media screen and (min-width: 1024px) {
@@ -1631,6 +1660,10 @@ form.form-contact label {
     padding-left: 0;
     padding-right: 5px;
   }
+  .sidebars .post-related .right,
+  .sidebars .post-related .left {
+    height: 110px;
+  }
   /* Detail */
   /* Section HR */
   .section-hr .box {
@@ -1714,10 +1747,10 @@ form.form-contact label {
     padding-top: 0;
   }
   .header .left {
-    width: 78%;
+    width: 75%;
   }
   .header .left p {
-    font-size: 20px;
+    font-size: 18px;
   }
   /* Header */
   /* Section NEws */
@@ -1791,10 +1824,16 @@ form.form-contact label {
 }
 @media screen and (min-width: 1366px) {
   /* Header */
-  .header .left p {
-    font-size: 20px;
-  }
   /* Header */
+  /* Detail */
+  .sidebars .post-related .right,
+  .sidebars .post-related .left {
+    height: 133px;
+  }
+  .post-related h3 {
+    font-size: 16px;
+  }
+  /* Detail */
 }
 @media screen and (min-width: 1440px) {
   .container {
