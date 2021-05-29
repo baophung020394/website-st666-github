@@ -1362,10 +1362,10 @@ form.form-contact label {
 .carousel-home-desk .item .item-banner img {
   border-radius: 12px;
 }
-.owl-item .item {
+.carousel-mobile .owl-item .item {
   display: none;
 }
-.owl-item.active .item {
+.carousel-mobile .owl-item.active .item {
   display: flex;
 }
 /* Other */
