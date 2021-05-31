@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  
   $(".carousel-home-mobile").owlCarousel({
     loop: true,
     responsiveClass: true,
@@ -111,6 +112,7 @@ $(document).ready(() => {
   $(".bg-overlay").on("click", function () {
     $(this).css({ display: "none" });
     $("body").find(".actions").removeClass("active");
+    $("body").find(".menu-mobile-sub").removeClass("active");
   });
   $(".open-menu").on("click", function () {
     $("body").find(".menu-mobile").addClass("active");
@@ -133,5 +135,25 @@ $(document).ready(() => {
   $(".readmore-about").on("click", function (e) {
     e.preventDefault();
     $("body").find(".section-aboutst666 .item-about").toggleClass("active");
+  });
+  $(".menu-bottom .item-menu").on("click", function (e) {
+    e.preventDefault();
+    $(this).find('.menu-mobile-sub').addClass('active');
+    $("body").find(".bg-overlay").css({ display: "block" });
+  });
+  if ($(window).width() >= 992) {
+    $('.header').removeClass('header-mobile');
+  } else {
+    $('.header').addClass('header-mobile');
+  }
+  $(window).resize(function(){
+    var width = $(window).width();
+    // $('.header').addClass('header-mobile');
+    console.log(width);
+    if (width >= 992) {
+      $('.header').removeClass('header-mobile');
+    } else {
+      $('.header').addClass('header-mobile');
+    }
   });
 });
