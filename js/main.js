@@ -59,6 +59,9 @@ $(document).ready(() => {
     loop: true,
     responsiveClass: true,
     margin: 15,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     navText: [
       "<img src='../img/item/left.png'>",
       "<img src='../img/item/right.png'>",
@@ -86,6 +89,9 @@ $(document).ready(() => {
     responsiveClass: true,
     dots: true,
     nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,

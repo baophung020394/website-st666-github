@@ -146,7 +146,7 @@ p {
   position: fixed;
   top: 0;
   right: -100%;
-  z-index: 2;
+  z-index: 999;
   transition: 0.4s;
 }
 .menu-mobile.active {
@@ -228,7 +228,7 @@ p {
 /* End Header */
 /* Section Banner */
 .section-banner {
-  margin: 15px 0 30px;
+  margin: 15px 0 0;
 }
 .section-banner .item .item-banner {
   margin-bottom: 5px;
@@ -279,6 +279,9 @@ p {
   font-family: var(--font-family-Roboto-Regular);
   font-size: 9px;
 }
+.section-banner .list-top span.icon.view {
+  margin-right: 20px;
+}
 .section-banner .list-top span.icon img {
   width: 15px;
   height: 11px;
@@ -290,7 +293,7 @@ p {
 .section-banner .list-top .reactions {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .section-banner .list-top .view img {
   margin-right: 3px;
@@ -315,6 +318,7 @@ p {
   background: var(--color-text4);
   padding: 80px 20px 20px;
   border-radius: 12px;
+  margin-top: 15px;
 }
 .section-aboutst666 .tags-about {
   position: absolute;
@@ -415,7 +419,7 @@ p {
 .section-hr .box .right h2 {
   font-family: var(--font-family-Roboto-Bold), sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   margin-bottom: 15px;
 }
 .section-hr .box .right p {
@@ -429,7 +433,7 @@ p {
 /* Section HR */
 /* Section News */
 .section-news {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 .section-news .news .new {
   padding: 15px;
@@ -473,7 +477,7 @@ p {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
   font-size: 15px;
   color: var(--color-text1);
-  height: 109px;
+  height: 89px;
   overflow: hidden;
 }
 .section-news .news .new .groups .readmore {
@@ -558,7 +562,7 @@ p {
   margin-bottom: 15px;
 }
 .footer .footer-bottom {
-  margin: 50px 0 15px;
+  margin: 10px 0 15px;
   background: var(--color-text4);
   padding: 30px 10px;
 }
@@ -939,18 +943,18 @@ p {
 }
 .post-related .left {
   width: 52%;
-  height: 110px;
+  height: 94px;
 }
 .post-related .right {
   width: 45%;
   height: 100%;
-  height: 110px;
+  height: 94px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .sidebars .post-related .left {
-  height: 133px;
+  height: 94px;
 }
 .post-related .left a {
   height: 100%;
@@ -1087,7 +1091,7 @@ form.form-contact label {
   display: none;
 }
 /* Sport */
-.sport .banner-page {
+.banner-page {
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -1118,7 +1122,7 @@ form.form-contact label {
   text-align: left;
 }
 .section-hot-news a.title-link {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .section-hot-news p {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
@@ -1133,13 +1137,13 @@ form.form-contact label {
 }
 .section-hot-news .owl-next,
 .section-hot-news .owl-prev {
-  top: 45%;
+  top: 20%;
 }
 .section-hot-news .owl-prev {
-  left: 30%;
+  left: 0;
 }
 .section-hot-news .owl-next {
-  right: 30%;
+  right: 0;
 }
 .pos-title {
   position: relative;
@@ -1183,6 +1187,8 @@ form.form-contact label {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
   line-height: 20px;
   margin-bottom: 20px;
+  height: 81px;
+  overflow: hidden;
 }
 .section-bg .page-link {
   border: none;
@@ -1242,9 +1248,11 @@ form.form-contact label {
 }
 .sport {
   overflow: hidden;
+  padding-top: 100px;
 }
-.section-videoclip .video-clip a {
+.section-videoclip .video-clip iframe {
   width: 100%;
+  height: 263px;
   display: block;
 }
 .section-videoclip .video-clip {
@@ -1258,7 +1266,7 @@ form.form-contact label {
 }
 .section-daga .owl-next,
 .section-daga .owl-prev {
-  top: 65%;
+  top: 31%;
 }
 .section-daga .groups-play {
   margin-top: 10px;
@@ -1286,8 +1294,10 @@ form.form-contact label {
   text-transform: none;
 }
 .section-daga .right p {
-  font-size: 13px;
+  font-size: 14px;
   margin: 0;
+  height: 63px;
+  overflow: hidden;
 }
 .section-daga .right .readmore-about {
   font-size: 12px;
@@ -1392,7 +1402,7 @@ form.form-contact label {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
 }
 .header.header-mobile .register,
 .header.header-mobile .download {
@@ -1581,6 +1591,7 @@ form.form-contact label {
 }
 .ring-noti i.fa-bell {
   width: 20px;
+  margin-top: 8px;
   margin-right: 15px;
   position: relative;
   z-index: 2;
@@ -1589,13 +1600,14 @@ form.form-contact label {
   transition: 0.4s;
   transform: rotate(280deg);
   color: var(--color-text2);
+  font-size: 1.5rem;
 }
 .ring-noti p {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
   font-size: 16px;
   color: var(--color-text1);
   animation: ring infinite;
-  animation-duration: 25s;
+  animation-duration: 35s;
   white-space: nowrap;
 }
 .ring-noti p .text-red {
@@ -1658,6 +1670,123 @@ form.form-contact label {
   }
 }
 /* Ring */
+/* About  */
+h1.heading {
+  font-size: 25px;
+  color: var(--color-text2);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px 0;
+}
+h1.heading img {
+  width: 30px;
+  vertical-align: baseline;
+}
+.about .readmore,
+.about p {
+  font-family: var(--font-family-Roboto-Regular), sans-serif;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.box-about h3,
+h3.heading-content {
+  font-family: var(--font-family-Roboto-Bold), sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.box-about {
+  margin-bottom: 15px;
+}
+
+.box-about .text {
+  border: 5px solid var(--color-text2);
+  padding: 2rem;
+  width: 295px;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.box-about .images {
+  width: 317px;
+  margin: auto;
+}
+.about .readmore {
+  color: var(--color-text6);
+  text-decoration: underline;
+}
+.detail,
+.abouts {
+  padding-top: 100px;
+  position: relative;
+}
+/* About  */
+/* Menu Sub */
+.sub-menu {
+  display: none;
+  width: 47px;
+  /* overflow: hidden; */
+}
+.sub-menu img {
+  width: 24px;
+  height: 24px;
+}
+.sub-menu {
+  width: 47px;
+  background: #ffffff;
+  box-shadow:  0px 0px 4px 0px #707070;
+  overflow: hidden;
+  flex-direction: column;
+  position: fixed;
+  top: 22.5%;
+  left: 1%;
+  z-index: 10;
+  transition:  0.4s;
+}
+.sub-menu:hover {
+  width: 295px;
+}
+.sub-menu:hover ul li span {
+  /* box-shadow: 4px 0 9px -2px rgb(0 0 0 / 30%); */
+  /* box-shadow: 5px 0 10px -2px rgb(0 0 0 / 30%); */
+}
+.sub-menu ul {
+  /* padding-left: 47px; */
+}
+.sub-menu ul li {
+  position: relative;
+  width: 100%;
+  height: 47px;
+  border-bottom: 1px solid rgb(112,112,112,0.3);
+  display: block;
+}
+.sub-menu ul li a { 
+  /* padding-left: 55px; */
+  font-family: var(--font-family-Roboto-Medium), sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--color-text1);
+  white-space: nowrap;
+}
+.sub-menu ul li span {
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+  text-align: center;
+  line-height: 47px;
+  background-color: var(--color-text2);
+  border-bottom: 1px solid rgb(112,112,112,0.1);
+  margin-right: 20px;
+}
+.sub-menu ul li:last-child {
+  border-bottom: none;
+}
+/* Menu Sub */
+
 /* Other */
 .carousel-mobile .owl-item .item {
   display: none;
@@ -2128,6 +2257,10 @@ form.form-contact label {
     width: 234px;
     padding: 0 1rem;
   }
+  .section-news .news .new .groups h2 {
+    height: 40px;
+    overflow: hidden;
+  }
   /* SEction News */
   /* Footer */
   /* Footer */
@@ -2172,13 +2305,14 @@ form.form-contact label {
   }
   .sidebars .post-related .right,
   .sidebars .post-related .left {
-    height: 212px;
+    height: 94px;
+    /* height: 212px; */
   }
   /* Detail */
   /* Sport */
   .section-hot-news .owl-next,
   .section-hot-news .owl-prev {
-    top: 64%;
+    top: 30%;
   }
   .pos-title h2.title {
     left: 69%;
@@ -2191,7 +2325,7 @@ form.form-contact label {
     padding: 0.5rem;
   }
   .section-hr.section-information .section-bg {
-    padding: 5rem 2.5rem;
+    padding: 5rem 2.5rem 1rem;
   }
   .section-hr.section-information .boxs {
     width: 213px;
@@ -2222,7 +2356,7 @@ form.form-contact label {
   }
   .section-daga .owl-next,
   .section-daga .owl-prev {
-    top: 66%;
+    /* top: 66%; */
   }
   .section-daga .groups-play a {
     padding: 8px 20px;
@@ -2251,7 +2385,25 @@ form.form-contact label {
   .section-rules .list-text {
     padding-top: 30px;
   }
+  .section-banner .list-top .card-news h1.title {
+    height: 45;
+    overflow: hidden;
+  }
   /* casino */
+  /* About */
+  .box-about .text {
+    width: 97%;
+  }
+  .box-about .images {
+    width: 100%;
+  }
+  h1.heading {
+    font-size: 47px;
+  }
+  h1.heading img {
+    width: 53px;
+  }
+  /* About */
 }
 
 @media screen and (min-width: 992px) {
@@ -2306,7 +2458,8 @@ form.form-contact label {
   /* Detail */
   .sidebars .post-related .right,
   .sidebars .post-related .left {
-    height: 90px;
+    height: 94px;
+    /* height: 90px; */
   }
   .post-related h3 {
     font-size: 13px;
@@ -2335,6 +2488,9 @@ form.form-contact label {
     max-width: 900px;
   }
   /* Header */
+  .sub-menu {
+    display: flex;
+  }
   .header {
     display: flex;
     flex-direction: row;
@@ -2441,7 +2597,7 @@ form.form-contact label {
   }
   .menu-socials {
     position: fixed;
-    top: 25%;
+    top: 22.5%;
     right: 0;
     z-index: 10;
     display: flex;
@@ -2507,7 +2663,8 @@ form.form-contact label {
   }
   .sidebars .post-related .right,
   .sidebars .post-related .left {
-    height: 110px;
+    height: 94px;
+    /* height: 110px; */
   }
   /* Detail */
   /* Section HR */
@@ -2530,8 +2687,11 @@ form.form-contact label {
   }
   /* Section HR */
   /* Sport */
+  .sport {
+    padding-top: 20px;
+  }
   .section-hot-news .item {
-    padding: 0 7rem;
+    padding: 0 3rem;
   }
   .section-hot-news .owl-next,
   .section-hot-news .owl-prev {
@@ -2577,6 +2737,25 @@ form.form-contact label {
   }
   /* Khuyen mai */
   /* About */
+
+  .box-about .text {
+    width: 400px;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+  }
+  .box-about .text p {
+    height: 110px;
+    overflow: hidden;
+  }
+  .box-about .images {
+    padding-left: 0;
+    padding-right: 0;
+    width: 400px;
+  }
+  .detail,
+  .abouts {
+    padding-top: 0;
+  }
   /* About */
 }
 @media screen and (min-width: 1200px) {
@@ -2676,10 +2855,10 @@ form.form-contact label {
   /* Footer */
   /* Sport */
   .section-bg {
-    padding: 5rem 6rem;
+    padding: 5rem 6rem 1rem;
   }
   .section-banner .section-bg {
-    padding: 5rem 0;
+    padding: 5rem 0 1rem;
   }
   .section-banner .groups .right-banner,
   .section-banner .groups .left-banner {
@@ -2703,7 +2882,7 @@ form.form-contact label {
     width: 252px;
   }
   .section-hr.section-information .section-bg {
-    padding: 5rem 9rem;
+    padding: 5rem 9rem 1rem;
   }
   /* Sport */
   /* Da ga */
@@ -2744,6 +2923,15 @@ form.form-contact label {
     width: 330px;
   }
   /* Khuyen mai */
+  /* About */
+
+  .box-about .text {
+    width: 500px;
+  }
+  .box-about .images {
+    width: 500px;
+  }
+  /* About */
 }
 @media screen and (min-width: 1366px) {
   /* Header */
@@ -2751,10 +2939,11 @@ form.form-contact label {
   /* Detail */
   .sidebars .post-related .right,
   .sidebars .post-related .left {
-    height: 133px;
+    /* height: 133px; */
+    height: 94px;
   }
   .post-related h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
   /* Detail */
 }
@@ -2793,13 +2982,13 @@ form.form-contact label {
   }
   .section-news .news,
   .section-hr .boxs {
-    width: 400px;
+    width: 394px;
   }
   .section-news .news .new {
     padding: 1.5rem;
   }
   .footer .footer-top .list-services {
-    width: 411px;
+    width: 414px;
   }
   .section-hr .box .images {
     width: 26%;
@@ -2811,14 +3000,14 @@ form.form-contact label {
     top: 0;
   }
   .sport .list-top-desk .card-news {
-    width: 294px;
+    width: 290px;
     margin-right: 30px;
   }
   .section-hr.section-information .boxs {
     width: 295px;
   }
   .section-hr.section-information .section-bg {
-    padding: 5rem 10.2rem;
+    padding: 5rem 10.2rem 1rem;
   }
   .section-hr.section-information .boxs.ct .images {
     width: 0;
@@ -2826,6 +3015,9 @@ form.form-contact label {
   .section-hr.section-information .boxs.ct .right {
     width: 78%;
   }
+  /* .sport .list-top-desk .card-new p {
+    min-height: 110px;
+  } */
   /* Sport */
   /* Footer */
   .footer .footer-bottom h3 {
@@ -2869,8 +3061,25 @@ form.form-contact label {
     font-size: 24px;
   }
   /* Casino */
+  /* Detail */
+  .post-related h3 {
+    font-size: 16px;
+  }
+  /* Detail */
+  /* About */
+
+  .box-about .text {
+    width: 583px;
+  }
+  .box-about .images {
+    width: 583px;
+  }
+  /* About */
 }
 @media screen and (min-width: 1636px) {
+  .sub-menu {
+    left: 2%;
+  }
   .menu-socials {
     right: 2%;
   }
@@ -2896,7 +3105,12 @@ form.form-contact label {
 }
 @media screen and (min-width: 1920px) {
   .menu-socials {
-    right: 8%;
+    right: 12%;
+    top: 16%;
+  }
+  .sub-menu {
+    left: 12%;
+    top: 16%;
   }
   .menu-games {
     left: 8%;
