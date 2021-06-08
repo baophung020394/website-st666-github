@@ -1771,7 +1771,7 @@ h3.heading-content {
   overflow: hidden;
   flex-direction: column;
   position: fixed;
-  top: 23.5%;
+  top: 148px;
   left: 1%;
   z-index: 10;
   transition: 0.4s;
@@ -2639,7 +2639,7 @@ h3.heading-content {
   }
   .menu-socials {
     position: fixed;
-    top: 22.5%;
+    top: 150px;
     right: 0;
     z-index: 10;
     display: flex;
