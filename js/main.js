@@ -58,10 +58,10 @@ $(document).ready(() => {
   $(".carousel-sport").owlCarousel({
     loop: true,
     responsiveClass: true,
-    margin: 15,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
+    // margin: 15,
+    // autoplay: true,
+    // autoplayTimeout: 3000,
+    // autoplayHoverPause: true,
     navText: [
       "<img src='../img/item/left.png'>",
       "<img src='../img/item/right.png'>",

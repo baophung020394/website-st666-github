@@ -267,12 +267,17 @@ p {
   overflow: hidden;
 }
 .section-banner .list-top .card-news h1.title {
-  margin: 20px 0 20px;
+  margin: 15px 0;
+  height: 39px;
+  overflow: hidden;
 }
 .section-banner .list-top .card-news .line {
   margin: 0 auto 20px;
 }
-
+.section-banner .list-top .card-news .card-new img.img-list-top {
+  height: 140px ;
+  overflow: hidden;
+}
 .section-banner .list-top .comment,
 .section-banner .list-top .write-comment,
 .section-banner .list-top span.icon {
@@ -396,6 +401,11 @@ p {
 }
 .section-hr .boxs:last-child {
   margin-bottom: 0;
+}
+.section-news .news {
+  max-height: 553px;
+  height: 553px;
+  overflow: hidden;
 }
 .section-hr .box {
   display: flex;
@@ -576,6 +586,9 @@ p {
 }
 .footer .footer-bottom .groups-brands a {
   margin-bottom: 15px;
+  width: 52px;
+  overflow: hidden;
+  height: 52px;
 }
 .footer .footer-bottom .groups-brands a img {
   border-radius: 12px;
@@ -918,23 +931,30 @@ p {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 15px;
-  min-height: 133px;
+  min-height: 94px;
+}
+.section-hot-news .post-related { 
+  justify-content: flex-start;
 }
 .post-related h3,
 .list-post-related h2.title {
   font-family: var(--font-family-Roboto-Bold), sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding: 0;
+  
 }
 .post-related h3 {
-  font-size: 16px;
+  height: 48px;
+  overflow: hidden;
+}
+.post-related h3 {
   margin-bottom: 0;
 }
 .sidebars .post-related .right {
-  height: 133px;
+  height: 94px;
 }
 .post-related .right .date {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
@@ -1107,7 +1127,7 @@ form.form-contact label {
 }
 .section-hot-news .right .post-related .right,
 .section-hot-news .right .post-related .left {
-  height: 133px;
+  height: 150px;
 }
 .section-hot-news .right .post-related {
   margin-bottom: 30px;
@@ -1120,6 +1140,8 @@ form.form-contact label {
   line-height: 33px;
   color: var(--color-text1);
   text-align: left;
+  height: 63px;
+  overflow: hidden;
 }
 .section-hot-news a.title-link {
   margin-top: 30px;
@@ -1130,7 +1152,9 @@ form.form-contact label {
   line-height: 20px;
   color: var(--color-text1);
   text-align: left;
-  margin-top: 30px;
+  height: 63px;
+  overflow: hidden;
+  margin-top: 20px;
 }
 .section-hot-news .item {
   text-align: center;
@@ -1174,6 +1198,8 @@ form.form-contact label {
 .sport .list-top-desk .card-news {
   padding: 0;
   margin-bottom: 15px;
+  height: 413px;
+  overflow: hidden;
 }
 .sport .list-top-desk .card-new {
   padding: 0 0 15px 0;
@@ -1186,7 +1212,7 @@ form.form-contact label {
   font-size: 15px;
   font-family: var(--font-family-Roboto-Regular), sans-serif;
   line-height: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 36px;
   height: 81px;
   overflow: hidden;
 }
@@ -1219,10 +1245,10 @@ form.form-contact label {
 .section-page .list-top .reactions {
   justify-content: flex-start;
 }
-.section-page .list-top .write-comment,
+/* .section-page .list-top .write-comment,
 .section-page .list-top span.icon {
   flex: 1 0 0;
-}
+} */
 .section-page .list-top .comment {
   flex: 5 0 0 !important;
 }
@@ -1724,6 +1750,9 @@ h3.heading-content {
   padding-top: 100px;
   position: relative;
 }
+.section-aboutst666 {
+  margin: 40px 0;
+}
 /* About  */
 /* Menu Sub */
 .sub-menu {
@@ -1738,14 +1767,14 @@ h3.heading-content {
 .sub-menu {
   width: 47px;
   background: #ffffff;
-  box-shadow:  0px 0px 4px 0px #707070;
+  box-shadow: 0px 0px 4px 0px #707070;
   overflow: hidden;
   flex-direction: column;
   position: fixed;
-  top: 22.5%;
+  top: 23.5%;
   left: 1%;
   z-index: 10;
-  transition:  0.4s;
+  transition: 0.4s;
 }
 .sub-menu:hover {
   width: 295px;
@@ -1761,10 +1790,10 @@ h3.heading-content {
   position: relative;
   width: 100%;
   height: 47px;
-  border-bottom: 1px solid rgb(112,112,112,0.3);
+  border-bottom: 1px solid rgb(112, 112, 112, 0.3);
   display: block;
 }
-.sub-menu ul li a { 
+.sub-menu ul li a {
   /* padding-left: 55px; */
   font-family: var(--font-family-Roboto-Medium), sans-serif;
   font-size: 15px;
@@ -1779,7 +1808,7 @@ h3.heading-content {
   text-align: center;
   line-height: 47px;
   background-color: var(--color-text2);
-  border-bottom: 1px solid rgb(112,112,112,0.1);
+  border-bottom: 1px solid rgb(112, 112, 112, 0.1);
   margin-right: 20px;
 }
 .sub-menu ul li:last-child {
@@ -2213,6 +2242,10 @@ h3.heading-content {
     height: 220px;
     width: 100%;
   }
+  .section-news .news .new .groups .img-news iframe {
+    width: 100%;
+    height: 100%;
+  }
   .section-news .news .new .groups .img-news img {
     height: 100%;
   }
@@ -2345,6 +2378,9 @@ h3.heading-content {
   .section-bg .page-link {
     margin-right: 10px;
   }
+  .sport .list-top-desk .card-new p { 
+    margin-bottom: 60px;
+  }
   /* Sport */
   /* Da ga */
   .section-daga iframe {
@@ -2386,7 +2422,7 @@ h3.heading-content {
     padding-top: 30px;
   }
   .section-banner .list-top .card-news h1.title {
-    height: 45;
+    /* height: 45px; */
     overflow: hidden;
   }
   /* casino */
@@ -2453,7 +2489,9 @@ h3.heading-content {
   .section-videoclip .video-clip:last-child {
     margin-right: 0;
   }
-
+  .sport .list-top-desk .card-new p {
+    margin-bottom: 20px;
+  }
   /* Sport */
   /* Detail */
   .sidebars .post-related .right,
@@ -2462,7 +2500,11 @@ h3.heading-content {
     /* height: 90px; */
   }
   .post-related h3 {
+    height: 58px;
     font-size: 13px;
+  }
+  .section-hot-news .post-related h3 { 
+    height: 63px;
   }
   /* Detail */
   /* Da ga */
@@ -2766,8 +2808,8 @@ h3.heading-content {
   /* Header */
   .menu-socials a img,
   .menu-games a img {
-    width: 50px;
-    height: 50px;
+    width: 68px;
+    height: 68px;
   }
   .carousel-home.carousel-home-mobile {
     display: none;
@@ -2884,6 +2926,20 @@ h3.heading-content {
   .section-hr.section-information .section-bg {
     padding: 5rem 9rem 1rem;
   }
+  .section-hot-news .item {
+    width: 476px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .section-hot-news .owl-prev {
+    left: -46px;
+  }
+  .section-hot-news .owl-next {
+    right: -18px;
+  }
+  .sport .list-top-desk .card-new p {
+    margin-bottom: 48px;
+  }
   /* Sport */
   /* Da ga */
   .section-daga .right .readmore-about {
@@ -2946,11 +3002,19 @@ h3.heading-content {
     font-size: 14px;
   }
   /* Detail */
+  /* Sport */
+  .section-hot-news .item {
+    width: 549px;
+  }
+  .section-bg {
+    padding: 5rem 3rem 1rem;
+  }
+  /* Sport */
 }
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1250px;
-    width: 1250px;
+    max-width: 1280px;
+    width: 1280px;
   }
   /* Header */
   .menu-socials a img,
@@ -3014,6 +3078,18 @@ h3.heading-content {
   }
   .section-hr.section-information .boxs.ct .right {
     width: 78%;
+  }
+  .section-hot-news .owl-prev {
+    left: 30px;
+  }
+  .section-hot-news .owl-next {
+    right: 36px;
+  }
+  .sport .list-top-desk .card-new p {
+    margin-bottom: 30px;
+  }
+  .section-hot-news .right .post-related {
+    width: 434px;
   }
   /* .sport .list-top-desk .card-new p {
     min-height: 110px;
@@ -3106,11 +3182,9 @@ h3.heading-content {
 @media screen and (min-width: 1920px) {
   .menu-socials {
     right: 12%;
-    top: 16%;
   }
   .sub-menu {
     left: 12%;
-    top: 16%;
   }
   .menu-games {
     left: 8%;
