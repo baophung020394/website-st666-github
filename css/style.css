@@ -583,6 +583,7 @@ iframe {
 .footer .footer-top .left img {
   width: 18px;
 }
+.footer .footer-top .right span,
 .footer .footer-top .right a {
   font-family: var(--font-family-Roboto-Regular);
   font-size: 12px;
@@ -590,6 +591,7 @@ iframe {
   display: block;
   margin-bottom: 5px;
 }
+.footer .footer-top .right span:last-child,
 .footer .footer-top .right a:last-child {
   margin-bottom: 0;
 }
@@ -1172,10 +1174,10 @@ form.form-contact label {
   background-position-y: 0;
   padding: 5rem 1rem 0;
 }
-.section-hot-news .right .post-related .right,
+/* .section-hot-news .right .post-related .right,
 .section-hot-news .right .post-related .left {
   height: 150px;
-}
+} */
 .section-hot-news .right .post-related {
   margin-bottom: 30px;
 }
@@ -1385,10 +1387,10 @@ form.form-contact label {
   margin: 0;
   padding: 0;
 }
-.section-daga .right .post-related .right,
+/* .section-daga .right .post-related .right,
 .section-daga .right .post-related .left {
   height: 150px;
-}
+} */
 .section-news-daga {
   margin-top: 60px;
 }
@@ -1643,7 +1645,19 @@ form.form-contact label {
   opacity: 1;
   visibility: visible;
 }
-
+.huongdan .menu-mobile-sub a.item5,
+.huongdan .menu-mobile-sub a.item3,
+.huongdan .menu-mobile-sub a.item1 {
+  font-family: var(--font-family-SFProDisplay-Bold), sans-serif;
+  background: var(--color-text4);
+  box-shadow: 0px 0px 7px 3px rgb(0 0 0 / 14%);
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 8px;
+}
 .menu-mobile-sub a.menu-item {
   -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
   transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
@@ -2267,10 +2281,10 @@ h3.heading-content {
   padding-right: 0;
   border-radius: 12px;
 }
-.sport .owl-carousel .owl-dots.disabled,
+/* .sport .owl-carousel .owl-dots.disabled,
 .sport .owl-carousel .owl-nav.disabled {
   display: block !important;
-}
+} */
 .sport .post-related .right {
   padding-left: 8px;
 }
@@ -2811,6 +2825,7 @@ h3.heading-content {
   .footer .footer-bottom {
     display: block;
   }
+  .footer .footer-top .right span,
   .footer .footer-top .right a {
     font-size: 15px;
   }
@@ -3017,7 +3032,7 @@ h3.heading-content {
     width: 354px;
   }
   .section-news .news .new .icon {
-    font-size: 24px;
+    font-size: 20px;
   }
   /* Section NEws */
   /* About */
@@ -3037,6 +3052,19 @@ h3.heading-content {
   }
   /* About */
   /* Footer */
+  .footer .footer-bottom .brands:nth-child(1) {
+    width: 41%;
+  }
+  .footer .footer-bottom .brands:nth-child(2) {
+    width: 31%;
+  }
+  .footer .footer-bottom .brands:nth-child(3) {
+    width: 27%;
+  }
+  .footer .footer-bottom .groups-brands a {
+    width: 40px;
+    height: 40px;
+  }
   .footer .footer-top .list-services:first-child {
     padding: 0;
   }
@@ -3048,6 +3076,17 @@ h3.heading-content {
   } */
   /* Footer */
   /* Sport */
+  .section-hot-news .right .post-related {
+    width: 358px;
+  }
+  .section-hot-news .right .post-related .left {
+    width: 215px;
+  }
+
+  .section-hot-news .right .post-related .right,
+  .section-hot-news .right .post-related .left {
+    height: 150px;
+  }
   .section-bg {
     padding: 5rem 6rem 1rem;
   }
@@ -3150,7 +3189,7 @@ h3.heading-content {
 @media screen and (min-width: 1366px) {
   /* Header */
   .sub-menu {
-    top: 120px;
+    top: 100px;
   }
   .menu-socials a img,
   .menu-games a img {
@@ -3178,6 +3217,9 @@ h3.heading-content {
   .section-bg {
     padding: 5rem 3rem 1rem;
   }
+  .section-hot-news .right .post-related {
+    width: 385px;
+  }
   /* Sport */
   /* Da ga */
   .section-daga a.title-link {
@@ -3186,7 +3228,7 @@ h3.heading-content {
   /* Da ga */
   /* Casino */
   .section-hot-news .post-related h3 {
-    height: 63px;
+    height: 62px;
   }
   .section-rules .img-girl {
     width: 350px;
@@ -3199,6 +3241,9 @@ h3.heading-content {
     width: 1260px;
   }
   /* Header */
+  .section-news .news .new .icon {
+    font-size: 23px;
+  }
   .sub-menu {
     top: 150px;
   }
@@ -3278,13 +3323,27 @@ h3.heading-content {
   .section-hot-news .right .post-related {
     width: 434px;
   }
+
   /* .sport .list-top-desk .card-new p {
     min-height: 110px;
   } */
   /* Sport */
   /* Footer */
+  .footer .footer-bottom .brands:nth-child(1) {
+    width: 44%;
+  }
+  .footer .footer-bottom .brands:nth-child(2) {
+    width: 30%;
+  }
+  .footer .footer-bottom .brands:nth-child(3) {
+    width: 25%;
+  }
+  .footer .footer-bottom .groups-brands a {
+    width: 52px;
+    height: 52px;
+  }
   .footer .footer-bottom h3 {
-    height: 30px;
+    height: 50px;
   }
   .footer .footer-top .list-services {
     padding: 0 0 0 3.5rem;
