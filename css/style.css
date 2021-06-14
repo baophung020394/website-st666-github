@@ -109,6 +109,9 @@ img {
 p {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
 }
+iframe {
+  border-radius: 12px;
+}
 /* Header */
 .header {
   text-align: center;
@@ -345,7 +348,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  width: 300px;
+  width: 280px;
   background: url(../img/item/background-about.png) no-repeat center center;
   background-size: cover;
   text-align: center;
@@ -389,7 +392,8 @@ p {
 /* About */
 /* Section HR */
 .section-hr {
-  margin-top: 30px;
+  margin-top: 14px;
+  padding: 0 12px;
 }
 .footer .footer-top .list-services .items {
   position: relative;
@@ -412,6 +416,7 @@ p {
 }
 .section-hr .boxs {
   margin-bottom: 15px;
+  overflow: hidden;
 }
 .section-hr .boxs:last-child {
   margin-bottom: 0;
@@ -532,7 +537,7 @@ p {
   height: 120px;
   overflow: hidden;
 }
-.section-news .new .groups .img-news img { 
+.section-news .new .groups .img-news img {
   height: 100%;
 }
 .section-news .new .groups .img-news iframe {
@@ -869,10 +874,10 @@ p {
   color: var(--color-text7);
 }
 .banner-detail {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 .banner-detail2 {
-  margin: 30px 0;
+  margin: 0 0 20px;
 }
 .banner-detail img,
 .banner-detail2 img {
@@ -1235,7 +1240,7 @@ form.form-contact label {
 }
 .section-banner .groups .right-banner,
 .section-banner .groups .left-banner {
-  display: none;
+  /* display: none; */
 }
 .sport .list-top-desk {
   display: block;
@@ -1257,7 +1262,7 @@ form.form-contact label {
   font-size: 15px;
   font-family: var(--font-family-Roboto-Regular), sans-serif;
   line-height: 20px;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
   height: 81px;
   overflow: hidden;
 }
@@ -1406,6 +1411,7 @@ form.form-contact label {
   text-transform: uppercase;
   height: 26px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .section-all-promotions .bottom p {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
@@ -1418,9 +1424,9 @@ form.form-contact label {
 }
 .section-all-promotions .item-promotion {
   box-shadow: 0px 1px 3px 0px #707070;
-  width: 300px;
+  width: 280px;
   margin: 0 auto 30px;
-  height: 358px;
+  height: 300px;
   overflow: hidden;
 }
 .section-all-promotions .item-promotion a {
@@ -1572,7 +1578,7 @@ form.form-contact label {
   opacity: 0;
   visibility: hidden;
 }
-.menu-mobile-sub .menu-item img { 
+.menu-mobile-sub .menu-item img {
   box-shadow: 0px 0px 7px 3px rgb(0 0 0 / 14%);
   border-radius: 100%;
 }
@@ -1817,7 +1823,8 @@ h3.heading-content {
   position: relative;
 }
 .section-aboutst666 {
-  margin: 33px 0 40px;
+  padding: 0 12px;
+  margin: 33px 0 0;
 }
 /* About  */
 /* Menu Sub */
@@ -2244,7 +2251,7 @@ h3.heading-content {
   margin-left: 8px;
 }
 .box-comment .media .media-body p {
-  font-family: var(--font-family-Roboto-Regular);
+  font-family: var(--font-family-Roboto-Regular), sans-serif;
   font-size: 16px;
 }
 .box-comment .title-comment {
@@ -2260,9 +2267,34 @@ h3.heading-content {
   padding-right: 0;
   border-radius: 12px;
 }
+.sport .owl-carousel .owl-dots.disabled,
+.sport .owl-carousel .owl-nav.disabled {
+  display: block !important;
+}
+.sport .post-related .right {
+  padding-left: 8px;
+}
+.sport .section-hot-news .left {
+  margin-bottom: 10px;
+}
+.banner-mobile {
+  width: 100%;
+  margin: 15px 0;
+  padding: 0 8px;
+}
+.banner-mobile img {
+  height: 150px;
+  border-radius: 12px;
+}
+.banner-desk {
+  display: none;
+}
 /* Other */
 @media screen and (min-width: 768px) {
   /* Header */
+  .banner-mobile {
+    display: none;
+  }
   .header .right a {
     margin-right: 20px;
   }
@@ -2317,6 +2349,7 @@ h3.heading-content {
   /* Section HR */
   .section-hr {
     display: block;
+    margin-top: 29px;
   }
   .footer .footer-top .list-services,
   .section-news .news,
@@ -2488,7 +2521,7 @@ h3.heading-content {
     margin-right: 10px;
   }
   .sport .list-top-desk .card-new p {
-    margin-bottom: 60px;
+    margin-bottom: 8px;
   }
   /* Sport */
   /* Da ga */
@@ -2605,7 +2638,7 @@ h3.heading-content {
     margin-right: 0;
   }
   .sport .list-top-desk .card-new p {
-    margin-bottom: 37px;
+    margin-bottom: 15px;
   }
   /* Sport */
   /* Detail */
@@ -2765,7 +2798,7 @@ h3.heading-content {
   .menu-games {
     position: fixed;
     top: 150px;
-    left: 0;
+    left: 1%;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -2876,7 +2909,7 @@ h3.heading-content {
   /* Sport */
   /* Da ga */
   .section-daga .item {
-    padding: 0 2rem;
+    padding: 0 3rem;
   }
   .section-daga a.title-link {
     padding: 0 1rem;
@@ -2921,6 +2954,10 @@ h3.heading-content {
     max-width: 1070px;
   }
   /* Header */
+
+  .banner-desk {
+    display: inline-block;
+  }
   .menu-socials a img,
   .menu-games a img {
     width: 50px;
@@ -2980,7 +3017,7 @@ h3.heading-content {
     width: 354px;
   }
   .section-news .news .new .icon {
-    font-size: 25px;
+    font-size: 24px;
   }
   /* Section NEws */
   /* About */
@@ -3053,7 +3090,7 @@ h3.heading-content {
     right: -18px;
   }
   .sport .list-top-desk .card-new p {
-    margin-bottom: 64px;
+    margin-bottom: 30px;
   }
   /* Sport */
   /* Da ga */
@@ -3092,6 +3129,7 @@ h3.heading-content {
   /* Khuyen mai */
   .section-all-promotions .item-promotion {
     width: 330px;
+    height: 320px;
   }
   /* Khuyen mai */
   /* About */
@@ -3111,12 +3149,15 @@ h3.heading-content {
 }
 @media screen and (min-width: 1366px) {
   /* Header */
+  .sub-menu {
+    top: 120px;
+  }
   .menu-socials a img,
   .menu-games a img {
     width: 68px;
     height: 68px;
   }
-  .menu-games  {
+  .menu-games {
     left: 1%;
   }
   /* Header */
@@ -3158,6 +3199,9 @@ h3.heading-content {
     width: 1260px;
   }
   /* Header */
+  .sub-menu {
+    top: 150px;
+  }
   .menu-socials a img,
   .menu-games a img {
     width: 68px;
@@ -3265,6 +3309,7 @@ h3.heading-content {
   /* Khuyen mai */
   .section-all-promotions .item-promotion {
     width: 404px;
+    height: 358px;
   }
   .section-all-promotions .item-promotion .bottom {
     padding: 0 25px;
