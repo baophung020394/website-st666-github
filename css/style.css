@@ -1634,6 +1634,7 @@ form.form-contact label {
   z-index: 10;
   opacity: 1;
   visibility: visible;
+  left: -10px;
 }
 .huongdan .menu-mobile-sub.active a.item4 {
   transform: translate3d(33px, -40px, 0);
@@ -1646,6 +1647,7 @@ form.form-contact label {
   z-index: 10;
   opacity: 1;
   visibility: visible;
+  left: -25px;
 }
 .huongdan .menu-mobile-sub a.item5,
 .huongdan .menu-mobile-sub a.item3,
@@ -1666,23 +1668,23 @@ form.form-contact label {
 }
 .menu-mobile-sub a.item1 {
   transition-duration: 180ms;
-  left: 19px;
+  left: 0;
 }
 .menu-mobile-sub a.item2 {
   transition-duration: 280ms;
-  left: 19px;
+  left: 0;
 }
 .menu-mobile-sub a.item3 {
   transition-duration: 380ms;
-  left: 19px;
+  left: 0;
 }
 .menu-mobile-sub a.item4 {
   transition-duration: 480ms;
-  left: 19px;
+  left: 0;
 }
 .menu-mobile-sub a.item5 {
   transition-duration: 580ms;
-  left: 19px;
+  left: 0;
 }
 
 /* Header Mobile */
