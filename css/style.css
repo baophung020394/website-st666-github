@@ -645,7 +645,7 @@ iframe {
   width: 90%;
 }
 .footer-clubs a {
-  margin-right: 15px;
+  margin-right: 0;
 }
 /* End Footer */
 /* Slider Mobile */
@@ -975,7 +975,7 @@ iframe {
 .post-related {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   padding-left: 0;
   padding-right: 0;
@@ -1010,7 +1010,7 @@ iframe {
   color: var(--color-text1);
 }
 .post-related .left {
-  width: 52%;
+  width: 137px;
   height: 94px;
 }
 .post-related .right {
@@ -1156,6 +1156,7 @@ form.form-contact label {
   margin-bottom: 15px;
 }
 /* Detail */
+.menu-socials,
 .menu-games {
   display: none;
 }
@@ -1376,7 +1377,7 @@ form.form-contact label {
 .section-daga .right p {
   font-size: 14px;
   margin: 0;
-  height: 63px;
+  height: 23px;
   overflow: hidden;
 }
 .section-daga .right .readmore-about {
@@ -1723,13 +1724,15 @@ form.form-contact label {
   animation: ring infinite;
   animation-duration: 35s;
   white-space: nowrap;
+  padding-top: 3px;
 }
 .ring-noti p .text-red {
   color: var(--color-text6);
 }
 .ring-noti .image {
-  position: relative;
-  left: 36px;
+  position: absolute;
+  left: 10px;
+  z-index: 999;
 }
 .ring-noti .group::before {
   content: "";
@@ -2297,11 +2300,14 @@ h3.heading-content {
   padding: 0 8px;
 }
 .banner-mobile img {
-  height: 150px;
+  max-height: 400px;
   border-radius: 12px;
 }
 .banner-desk {
   display: none;
+}
+.sidebars {
+  /* padding-right: 0; */
 }
 /* Other */
 @media screen and (min-width: 768px) {
@@ -2692,6 +2698,13 @@ h3.heading-content {
     max-width: 900px;
   }
   /* Header */
+  .ring-noti .group {
+    margin: 15px auto 0;
+  }
+  .post-related .right {
+    padding-right: 2px;
+    padding-left: 4px;
+  }
   .sub-menu {
     display: flex;
   }
@@ -2803,7 +2816,7 @@ h3.heading-content {
   .menu-socials {
     position: fixed;
     top: 150px;
-    right: 0;
+    right: 1%;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -2972,6 +2985,7 @@ h3.heading-content {
 
   .banner-desk {
     display: inline-block;
+    max-width: 131px;
   }
   .menu-socials a img,
   .menu-games a img {
@@ -3234,6 +3248,9 @@ h3.heading-content {
     width: 350px;
   }
   /* Casino */
+  .post-related .left {
+    width: 137px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container {
