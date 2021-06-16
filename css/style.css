@@ -822,7 +822,7 @@ iframe {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 10;
   width: 100%;
   height: 100%;
   display: none;
@@ -1020,7 +1020,7 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 0;
+  padding-left: 8px;
 }
 .sidebars .post-related .left {
   height: 94px;
@@ -1530,6 +1530,7 @@ form.form-contact label {
   justify-content: space-between;
   padding: 15px 10px;
 }
+.menu-bottom .btn-support,
 .menu-bottom a {
   font-family: var(--font-family-Roboto-Bold), sans-serif;
   font-weight: bold;
@@ -1731,7 +1732,7 @@ form.form-contact label {
 }
 .ring-noti .image {
   position: absolute;
-  left: 10px;
+  left: 7px;
   z-index: 999;
 }
 .ring-noti .group::before {
@@ -2309,6 +2310,9 @@ h3.heading-content {
 .sidebars {
   /* padding-right: 0; */
 }
+#chat-widget-container iframe {
+  bottom: 80px !important;
+}
 /* Other */
 @media screen and (min-width: 768px) {
   /* Header */
@@ -2703,7 +2707,7 @@ h3.heading-content {
   }
   .post-related .right {
     padding-right: 2px;
-    padding-left: 4px;
+    padding-left: 8px;
   }
   .sub-menu {
     display: flex;
