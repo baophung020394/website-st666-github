@@ -1276,7 +1276,7 @@ form.form-contact label {
   font-family: var(--font-family-Roboto-Regular), sans-serif;
   font-size: 13px;
   line-height: 18px;
-  border-radius: 50%;
+  border-radius: 50% !important;
   padding: 6px 11px;
   margin-right: 5px;
 }
@@ -1523,7 +1523,7 @@ form.form-contact label {
   width: 100%;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 99;
   background-color: var(--color-text4);
   display: flex;
   flex-direction: row;
@@ -1863,7 +1863,7 @@ h3.heading-content {
   position: fixed;
   top: 148px;
   left: 1%;
-  z-index: 10;
+  z-index: 9999;
   transition: 0.4s;
 }
 .sub-menu:hover {
