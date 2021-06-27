@@ -7,7 +7,7 @@ $(document).ready(() => {
       0: {
         items: 1,
         dots: true,
-        touchDrag: false,
+        pullDrag: false,
       },
       768: {
         items: 1,
@@ -87,6 +87,7 @@ $(document).ready(() => {
     responsive: {
       0: {
         items: 1,
+        pullDrag: false,
       },
       768: {
         items: 1,
