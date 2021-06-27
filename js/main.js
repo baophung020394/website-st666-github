@@ -90,6 +90,7 @@ $(document).ready(() => {
         pullDrag: false,
         freeDrag: false,
         mouseDrag: false,
+        mergeFit: false
       },
       768: {
         items: 1,
