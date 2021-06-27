@@ -88,6 +88,7 @@ $(document).ready(() => {
       0: {
         items: 1,
         pullDrag: false,
+        freeDrag: false,
       },
       768: {
         items: 1,
