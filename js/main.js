@@ -7,6 +7,7 @@ $(document).ready(() => {
       0: {
         items: 1,
         dots: true,
+        touchDrag: false,
       },
       768: {
         items: 1,
