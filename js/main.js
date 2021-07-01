@@ -7,7 +7,6 @@ $(document).ready(() => {
       0: {
         items: 1,
         dots: true,
-        pullDrag: false,
       },
       768: {
         items: 1,
@@ -87,10 +86,6 @@ $(document).ready(() => {
     responsive: {
       0: {
         items: 1,
-        pullDrag: false,
-        freeDrag: false,
-        mouseDrag: false,
-        mergeFit: false
       },
       768: {
         items: 1,
@@ -163,11 +158,6 @@ $(document).ready(() => {
     e.preventDefault();
     $("body").find(".section-aboutst666 .item-about").toggleClass("active");
   });
-  $(".menu-bottom .item-menu .btn-support").on("click", function (e) {
-    // e.preventDefault();
-    $(this).find(".menu-mobile-sub").toggleClass("active");
-    $("body").find(".bg-overlay").css({ display: "block" });
-  });
   if ($(window).width() >= 992) {
     $(".header").removeClass("header-mobile");
   } else {
@@ -177,13 +167,37 @@ $(document).ready(() => {
     var width = $(window).width();
     if (width >= 992) {
       $(".header").removeClass("header-mobile");
+      $(".header").css("background-image", "");
     } else {
       $(".header").addClass("header-mobile");
     }
   });
-  // Submenu mobile click
-  $('.menu-mobile .submenu').slideUp();
-  $('.menu-mobile li i').click(function() {
-    $(this).find('~ul.submenu').slideToggle(250);
+  // Menu Bottom click
+  $(".menu-bottom .item-menu a").on("click", function (e) {
+    console.log('aa')
+    $('body').find(".menu-mobile-sub").removeClass("active");
   })
+  $(".menu-bottom .item-menu .btn-support").on("click", function (e) {
+    $(".btn-support").not(this).find('.menu-mobile-sub').removeClass("active");
+    $(this).find(".menu-mobile-sub").toggleClass("active");
+    $("body").find(".bg-overlay").css({ display: "block" });
+  });
+  // Submenu mobile click
+  $(".menu-mobile .submenu").hide();
+  $(".menu-mobile li > i").click(function () {
+    console.log($(this).siblings().find("~ul.submenu"));
+    $(".menu-mobile .submenu").slideUp();
+    $(this).next("ul").stop(true, false, true).slideToggle(400);
+  });
+  $("#toc_container")
+    .promise()
+    .done(function () {
+      $(".toc_title").append(
+        '<img src="../img/item/card-list.png" alt="" class="dropdown-button" />'
+      );
+      $("#toc_container .dropdown-button").on("click", function () {
+        console.log("tesst");
+        $(this).parent().find("~ul").slideToggle(250);
+      });
+    });
 });
